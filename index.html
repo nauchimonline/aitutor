@@ -1,0 +1,277 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#d6b4ee"><title>ИИ — мой персональный репетитор · Интерактивный лист</title><style>@charset "UTF-8";
+:root {color-scheme:light;--ink:#242347;--ink-soft:#67657d;--lavender:#8c57d3;--pink:#fa6caa;--cream:#fffaf0;--edge:#e6d7ee;--shadow:0 9px 32px rgba(66,30,90,.1);}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(110deg,rgba(255,255,255,.2) 30%,rgba(255,255,255,0) 30.4%) 0 0/13px 13px,repeating-linear-gradient(100deg,#e7d3f3 0px,#d9bce9 5px,#e7d3f3 10px);min-height:100vh;line-height:1.48}button,a{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #184bd6;outline-offset:3px}.wrap{max-width:1120px;padding:24px 20px 52px;margin:0 auto}.masthead{position:relative;border:3px dashed #bca7cb;border-radius:25px;background:linear-gradient(125deg,#fffdf6,#fff4e8);padding:29px 38px;box-shadow:var(--shadow);overflow:hidden}.masthead:before{content:"";position:absolute;right:-55px;top:-76px;width:230px;height:230px;border:26px solid rgba(248,169,211,.34);border-radius:50%}.eyebrow{color:#7d35b3;font-size:.9rem;font-weight:800;letter-spacing:.015em}.hero-title{font-size:clamp(2rem,4.3vw,3.75rem);line-height:1.05;letter-spacing:-.045em;max-width:770px;margin:13px 0}.hero-sub{font-size:1.08rem;max-width:730px;color:#5f5878;margin:0}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:4px 5px 18px}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.brand-emblem{background:#fff9f1;border:2px dashed #a96cda;display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border-radius:12px;font-size:1.6rem}.top-link{font-size:.9rem;color:#493678;background:#fff9f7;border-radius:50px;padding:9px 16px;border:1px solid #d4bddd}.section{margin-top:28px}.section-title{font-size:clamp(1.45rem,3vw,2rem);margin:0 0 9px;letter-spacing:-.025em}.section-intro{margin:0 0 17px;color:#5c5577}.goal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.goal-tile{position:relative;display:flex;flex-direction:column;gap:11px;min-height:165px;padding:22px;border-radius:19px;background:#fffdf8;box-shadow:var(--shadow);border:2px solid #e9daed;transition:transform .17s,box-shadow .17s}.goal-tile:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(66,30,90,.16)}.goal-tile .emoji{font-size:1.6rem}.goal-name{font-size:1.35rem;font-weight:850;line-height:1.2;letter-spacing:-.02em}.goal-sub{font-size:.9rem;color:var(--ink-soft)}.goal-bottom{display:flex;gap:8px;justify-content:space-between;align-items:center;margin-top:auto;color:#746587;font-size:.84rem}.arrow{background:#f3e8fc;border-radius:100%;width:31px;height:31px;display:grid;place-items:center;color:#6d32a3;font-weight:900}.full-tile{grid-column:span 2;min-height:119px}.stitch-accent{height:9px;background:repeating-linear-gradient(90deg,#c694d9 0 11px,transparent 11px 19px);opacity:.5;margin:7px 0}.table-panel{background:#fffef9;border:1px solid #eddfeb;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}.table-head,.table-row{display:grid;grid-template-columns:24% 33% 43%;gap:0}.table-head{background:#f0e2f8;font-weight:800;font-size:.93rem}.table-head span,.table-row>div{padding:15px 17px}.table-row{border-top:1px solid #ebdfeb;transition:background .12s}.table-row:hover{background:#faf3ff}.table-row>div:not(:last-child){border-right:1px solid #f0e8f0}.group-cell{display:flex;flex-direction:column;gap:5px}.group-title{font-weight:850}.group-sub{font-size:.78rem;color:var(--ink-soft)}.row-method{font-weight:800;color:#392a5c}.row-method:hover{text-decoration:underline}.technique{display:block;color:var(--ink-soft);font-weight:500;font-size:.83rem;margin-top:4px}.table-benefit{color:#554b68;font-size:.92rem}.page-hero{background:#fffdf8;border-radius:23px;border:2px dashed #cbaedf;padding:25px 30px;box-shadow:var(--shadow)}.page-pills{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0}.pill{background:#f5eafa;border:1px solid #e9d2ef;padding:6px 11px;border-radius:25px;color:#513578;font-size:.85rem}.back{display:inline-flex;gap:8px;align-items:center;font-weight:800;color:#7545aa;margin-bottom:15px}.page-topline{display:flex;gap:12px;align-items:center}.page-emoji{font-size:2rem;background:#f3e6fa;width:58px;height:58px;display:grid;place-items:center;border-radius:16px}.page-h1{font-size:clamp(1.8rem,4vw,3.2rem);margin:5px 0 10px;line-height:1.12}.page-lead{margin:0;max-width:750px;color:#666079}.page-count{margin-top:17px;font-size:.86rem;color:#685b74}.method-list{display:grid;gap:16px;margin-top:19px}.method-card{background:#fffdf9;box-shadow:var(--shadow);border:1px solid #eadbec;border-radius:21px;padding:22px 24px;position:relative}.method-card:before{content:"";position:absolute;inset:7px;border:1px dashed #dbc6e3;pointer-events:none;border-radius:14px}.method-top{display:flex;justify-content:space-between;gap:14px;position:relative;z-index:1;align-items:flex-start}.method-no{display:inline-flex;border-radius:9px;background:#f0e3ff;padding:5px 10px;font-size:.83rem;font-weight:850;color:#683b9c}.method-name{font-size:1.35rem;line-height:1.25;margin:9px 0 3px;letter-spacing:-.025em}.method-original{font-size:.85rem;color:#776886;margin:0}.benefit-label{font-weight:800;font-size:.83rem;color:#6f3ba4;margin:17px 0 3px}.benefit{margin:0;max-width:740px;color:#4e4961}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{border-radius:20px;background:#f9effc;border:1px solid #f0ddf3;font-size:.78rem;padding:5px 10px;color:#685078}.method-controls{position:relative;z-index:2;display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:11px;border:1px solid transparent;padding:10px 15px;font-weight:800;font-size:.87rem}.btn-primary{background:#67359c;color:white}.btn-primary:hover{background:#4f247f}.btn-secondary{background:#fff7fc;border-color:#d5b8e7;color:#5b307d}.btn-secondary:hover{background:#f8e9ff}.prompt-box{background:#f8f3ff;border:1px solid #e5d5f1;border-radius:13px;padding:16px;margin-top:13px;white-space:pre-wrap;font-size:.87rem;line-height:1.55;max-height:375px;overflow:auto}.prompt-panel[hidden]{display:none}.try-check{display:flex;gap:8px;align-items:center;font-size:.85rem;color:#665a78;white-space:nowrap;padding-top:5px}.try-check input{accent-color:#8150b9;width:17px;height:17px}.finish{background:#fff7de;border:2px dashed #e7ca80;border-radius:19px;padding:19px 22px;margin-top:22px}.finish h2{margin:0 0 5px;font-size:1.17rem}.finish p{margin:0}.foot{margin:33px 3px 0;color:#5b5267;font-size:.84rem;border-top:1px solid #bea3cc;padding:20px 3px 0}.tiny-note{font-size:.83rem;color:#756b83}.method-count{background:#f2e2fe;color:#603991;border-radius:50px;padding:4px 9px;font-size:.78rem;font-weight:800}.toast{position:fixed;bottom:24px;right:24px;z-index:99;background:#282349;color:white;padding:12px 18px;border-radius:12px;box-shadow:0 10px 25px #4445;font-weight:700;transition:opacity .3s;max-width:min(90vw,350px)}.toast[hidden]{display:none}.category-nav{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.nav-chip{display:inline-flex;background:#fff8fd;border:1px solid #d8bee4;padding:7px 10px;border-radius:24px;font-size:.82rem;color:#60427d}.nav-chip[aria-current="page"]{background:#7f4fba;color:white;border-color:#7f4fba}.foot-action{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:19px}.design-dot{width:7px;height:7px;background:#f898bc;display:inline-block;border-radius:50%;margin-right:4px}.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:740px){.wrap{padding:13px 12px 28px}.masthead{padding:23px 21px}.hero-title{font-size:2.15rem}.hero-sub{font-size:.97rem}.goal-grid{grid-template-columns:1fr}.full-tile{grid-column:auto}.goal-tile{min-height:135px;padding:19px}.table-head{display:none}.table-row{display:block;padding:14px 16px}.table-row>div{padding:5px 0;border-right:0!important}.group-cell{border-bottom:1px dashed #decce7;padding-bottom:10px!important;margin-bottom:7px}.table-benefit{font-size:.87rem}.page-hero{padding:19px}.page-emoji{font-size:1.4rem;width:45px;height:45px}.method-card{padding:18px 17px}.method-name{font-size:1.16rem}.method-top{flex-direction:column;gap:6px}.try-check{white-space:normal}.top-link{font-size:.78rem;padding:7px 9px}}
+@media print{body{background:white}.wrap{max-width:none}.topbar,.method-controls,.category-nav,.btn,.top-link{display:none!important}.masthead,.goal-tile,.page-hero,.method-card,.table-panel{box-shadow:none}.method-card{break-inside:avoid}.prompt-panel{display:block!important}.prompt-box{max-height:none}.foot{border-top:1px solid #ccc}}
+
+/* Navigation and destination CTA — update */
+.wrap{max-width:1380px}
+.site-layout{display:grid;grid-template-columns:minmax(235px,275px) minmax(0,1fr);align-items:start;gap:24px}
+.site-main{min-width:0}
+.side-nav{position:sticky;top:22px;background:linear-gradient(145deg,#fffdf8,#fff5ff);border:2px solid #e2cbea;border-radius:22px;padding:20px 14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px}
+.side-heading{font-weight:900;color:#62338e;line-height:1.25;padding:4px 10px 12px;font-size:1.04rem}
+.side-link{display:flex;align-items:center;gap:10px;padding:12px 11px;border-radius:12px;color:#49315f;font-weight:750;font-size:.91rem;line-height:1.28;border:1px solid transparent;transition:background .15s,transform .15s}
+.side-link:hover{background:#f3e6fa;transform:translateX(2px)}
+.side-link.current{background:#7543a8;color:#fff;border-color:#7543a8;box-shadow:0 3px 10px #6d41902d}
+.side-link-icon{width:27px;flex:none;display:grid;place-items:center;font-size:1.2rem}
+.side-mini-arrow{font-weight:900;margin-left:auto;opacity:.65;font-size:1.13rem}
+.side-separator{height:1px;background:#e4d0eb;margin:4px 9px}
+.side-help{margin:10px 10px 0;color:#746880;font-size:.8rem}
+.goal-tile{min-height:185px}
+.goal-bottom{align-items:flex-end;flex-direction:column;gap:12px}
+.goal-status{align-self:flex-start}
+.goal-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;background:#7538ad;color:#fff;border:2px solid #7538ad;border-radius:999px;padding:9px 10px 9px 16px;font-size:.91rem;font-weight:850;line-height:1.2;width:100%;box-shadow:0 4px 0 rgba(85,37,135,.22)}
+.goal-tile:hover .goal-cta{background:#572389;border-color:#572389}
+.cta-arrow{display:grid;place-items:center;background:#fff;border-radius:50%;width:29px;height:29px;flex:none;color:#6731a0;font-size:1.3rem;line-height:1}
+.row-arrow{display:inline-block;color:#723caa;margin-left:5px;font-weight:900;font-size:1.12rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:18px}
+.foot-note{margin:0;flex:1 1 300px;max-width:640px}
+.foot-credit{font-weight:900;font-size:.92rem;color:#5c2b83;white-space:nowrap;background:#fff9f3;padding:9px 13px;border:1px dashed #caa5d5;border-radius:10px}
+@media(max-width:980px){.site-layout{grid-template-columns:208px minmax(0,1fr);gap:14px}.side-nav{padding:13px 9px}.side-link{font-size:.83rem;padding:10px 7px}.side-heading{font-size:.9rem}.goal-grid{grid-template-columns:1fr}.full-tile{grid-column:auto}}
+@media(max-width:740px){.wrap{max-width:100%}.site-layout{display:flex;flex-direction:column;gap:14px}.site-main{width:100%}.side-nav{width:100%;position:static;display:flex;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:8px;padding:9px;scrollbar-width:thin;border-radius:16px}.side-heading,.side-separator,.side-help,.side-mini-arrow{display:none}.side-link{white-space:nowrap;flex:none;font-size:.8rem;padding:9px 11px}.side-link-icon{width:auto;font-size:1.04rem}.goal-cta{font-size:.93rem}.goal-bottom{align-items:stretch}.foot-credit{width:100%;text-align:center}}
+@media print{.site-layout{display:block}.side-nav{display:none}.foot-credit{border:0}}
+</style></head><body><main class="wrap" id="app"></main><div class="toast" id="toast" hidden role="status" aria-live="polite"></div><script>window.TUTOR_GOALS = [
+  {
+    "id": "understand",
+    "slug": "razobratsya.html",
+    "icon": "🟣",
+    "number": "01",
+    "title": "Хочу разобраться",
+    "subtitle": "Когда тема кажется сложной или непонятной",
+    "lead": "Разберись, как связаны понятия, почему всё устроено именно так, и научись объяснять тему самостоятельно.",
+    "color": "violet",
+    "check": "Попробуй без ИИ связать три главных понятия темы и объяснить связь между ними.",
+    "methods": [
+      {
+        "n": 1,
+        "name": "Собери карту знаний",
+        "method": "Концептуальные карты (Concept Mapping)",
+        "benefit": "Поможет связать отдельные понятия в одну понятную картину.",
+        "actions": [
+          "Найди главные понятия",
+          "Объясни связи",
+          "Проверь карту"
+        ],
+        "prompt": "Ты — мой ИИ-репетитор по методу концептуальных карт. Пиши по-русски, на «ты», с учётом моего возраста. Помогай мне самому находить связи между понятиями, а не выдавай готовую схему.\n\nНАЧАЛО. Спроси мой класс, тему и что я уже знаю. Предложи вставить параграф учебника или конспект.\n\n1. Выдели 8–12 ключевых понятий по теме, но не показывай их связи заранее.\n2. Попроси меня выбрать главное понятие и объяснить, с какими другими понятиями оно связано.\n3. Для каждой связи проси завершить фразу: «А связано с Б, потому что…».\n4. Проверяй правильность связи. При ошибке сначала задай уточняющий вопрос; после двух неудачных попыток коротко объясни принцип.\n5. Двигайся по одному вопросу за сообщение. Используй причинные, иерархические и другие типы связей, где уместно.\n6. Когда мы проверим основные связи, собери из МОИХ ответов текстовую карту. Пометь сомнительные связи.\n7. В конце дай три вопроса, которые можно решить, только связав несколько понятий. Не подсказывай до ответа.\n\nНе выдумывай факты. Если что-то нельзя проверить по материалу, обозначь это. Начни с первого вопроса."
+      },
+      {
+        "n": 2,
+        "name": "Задавай вопросы «Почему?»",
+        "method": "Объясняющие вопросы (Elaborative Interrogation)",
+        "benefit": "Поможет понять причины и связи, а не просто запомнить факты.",
+        "actions": [
+          "Найди причину",
+          "Объясни своими словами",
+          "Примени к примеру"
+        ],
+        "prompt": "Ты — мой ИИ-репетитор. Используй метод объясняющих вопросов: помоги понять, почему факты и правила верны, а не просто их запомнить. Пиши на «ты», просто и по возрасту.\n\nСначала спроси мой класс, тему и что я уже знаю. Предложи прислать текст учебника.\n\nВыбирай по одному ключевому утверждению и спрашивай: «Почему это происходит?» или «Почему это верно?». Дожидайся моей попытки объяснения. Если объяснение поверхностное, задай один более глубокий вопрос. Если я не знаю, предложи простой пример или аналогию и снова спроси. Помогай связывать новое знание с тем, что я уже понимаю. Не выдавай готовый развёрнутый ответ сразу.\n\nПосле 3–4 уровней вопросов попроси меня самостоятельно построить цепочку причин и следствий. Затем предложи новое явление, к которому можно применить тот же принцип. Различай доказанные причины, гипотезы и неизвестное. Не выдумывай факты. В одном сообщении — один вопрос. Начни."
+      },
+      {
+        "n": 3,
+        "name": "Объясни своими словами",
+        "method": "Метод Фейнмана",
+        "benefit": "Проверит, действительно ли я понял тему, и поможет разобраться в непонятном.",
+        "actions": [
+          "Объясни просто",
+          "Найди пробелы",
+          "Объясни заново"
+        ],
+        "prompt": "Ты — мой ИИ-репетитор по методу Фейнмана. Помогай мне понимать тему так глубоко, чтобы я мог объяснить её ученику младшего класса. Говори по-русски, на «ты», с учётом возраста.\n\nНАЧАЛО. Спроси мой класс, тему и что я уже знаю. Предложи прислать параграф или конспект.\n\n1. Попроси меня самостоятельно объяснить первый ключевой принцип темы простыми словами.\n2. Не объясняй за меня до моей попытки.\n3. Найди неточности, сложные непояснённые слова и недостающие причинные связи.\n4. Задавай по одному уточняющему вопросу; не исправляй всё сразу.\n5. Если я затрудняюсь, предложи бытовую аналогию и снова попроси объяснить.\n6. Когда объяснение станет точным, попроси сократить его до 2–3 простых предложений.\n7. Предложи новый пример, где это знание нужно применить.\n8. В конце попроси объяснить всю тему без подсказок и дай точную обратную связь.\n\nНе хвали формально и не соглашайся с ошибками. Начни с вопроса о теме."
+      }
+    ]
+  },
+  {
+    "id": "solve",
+    "slug": "reshat.html",
+    "icon": "🔵",
+    "number": "02",
+    "title": "Хочу научиться решать",
+    "subtitle": "Когда нужно научиться выполнять задания самостоятельно",
+    "lead": "Освой способ действий: от первого примера и подсказок до самостоятельного решения новых задач.",
+    "color": "blue",
+    "check": "Реши новую задачу того же типа без подсказок и объясни, почему выбрал этот способ.",
+    "methods": [
+      {
+        "n": 4,
+        "name": "Помогай постепенно",
+        "method": "Метод строительных лесов (Scaffolding)",
+        "benefit": "Будет давать подсказки шаг за шагом, пока я не научусь справляться сам.",
+        "actions": [
+          "Попробуй сам",
+          "Получи подсказку",
+          "Убери поддержку"
+        ],
+        "prompt": "Ты — мой ИИ-репетитор. Используй метод постепенной поддержки (Scaffolding): помогай ровно настолько, насколько нужно, и постепенно убирай подсказки. Пиши по-русски и на «ты».\n\nНАЧАЛО. Спроси мой класс и попроси прислать задачу или назвать тему.\n\nЛЕСТНИЦА ПОМОЩИ:\n0 — попроси меня придумать первый шаг;\n1 — напомни нужное понятие или правило;\n2 — задай наводящий вопрос;\n3 — покажи один промежуточный шаг или частично решённый аналогичный пример;\n4 — если три попытки не помогли, объясни принцип в 2–3 предложениях и дай проверочный вопрос.\n\nНачинай с уровня 0 и повышай помощь только при затруднении или по моей просьбе. Не делай следующий шаг вместо меня, пока я не попробую. После успешного решения дай аналогичную задачу с меньшей помощью, а затем новую — совсем без подсказок. В финале скажи, на каких шагах я уже справляюсь сам. В одном сообщении — один вопрос. Начни."
+      },
+      {
+        "n": 5,
+        "name": "Покажи пример — дальше я сам",
+        "method": "Разобранные примеры (Worked Examples & Fading)",
+        "benefit": "Сначала покажет, как решать, а потом постепенно уберёт подсказки.",
+        "actions": [
+          "Посмотри образец",
+          "Дополни шаги",
+          "Реши без опоры"
+        ],
+        "prompt": "Ты — мой репетитор. Обучай через разобранные примеры с постепенным уменьшением помощи. Пиши по-русски, просто, под мой возраст.\n\nСначала спроси класс, тему и тип задач.\n\nЭТАП 1. Покажи одно полностью решённое типовое задание с пояснением каждого шага. Проверяй, понимаю ли я, зачем нужен каждый шаг.\nЭТАП 2. Дай похожее задание с пропущенными шагами — я должен заполнить их сам.\nЭТАП 3. Дай новую задачу без готовых шагов; подсказывай только при затруднении.\nЭТАП 4. Дай задачу для полностью самостоятельного решения. Не оценивай, пока я не представлю весь ход работы.\n\nЕсли я ошибаюсь, помоги обнаружить ошибочный принцип. Не переходи к следующему этапу до короткой проверки понимания. В финале объясни, что я уже умею без подсказок. Начни с вопроса о теме."
+      },
+      {
+        "n": 6,
+        "name": "Помоги найти ошибку",
+        "method": "Анализ ошибок (Error Analysis)",
+        "benefit": "Не выдаст сразу правильный ответ, а поможет самостоятельно найти и исправить ошибку.",
+        "actions": [
+          "Покажи решение",
+          "Найди слабый шаг",
+          "Исправь сам"
+        ],
+        "prompt": "Ты — мой репетитор по анализу ошибок. Помогай мне самостоятельно находить и исправлять ошибки, а не сразу сообщай правильный ответ.\n\nСначала попроси условие задания и МОЁ решение. Если нужно, узнай класс.\n\n1. Проверь решение целиком.\n2. Если оно правильное, подтверди и предложи проверить другим способом.\n3. Если есть ошибка, укажи шаг для перепроверки, но не называй сразу правильный ответ.\n4. Задай один наводящий вопрос и дождись моей попытки исправления.\n5. Если две попытки не помогают, коротко объясни ошибочный принцип и покажи корректный шаг.\n6. Попроси исправить всё решение самостоятельно.\n7. Дай похожую задачу для проверки.\n\nВ конце составь короткий «журнал ошибок»: где ошибся, какое правило помогло и как проверять себя дальше. Не придумывай причин моих ошибок. Начни с просьбы прислать решение."
+      },
+      {
+        "n": 7,
+        "name": "Перемешай задания",
+        "method": "Чередование типов задач (Interleaving)",
+        "benefit": "Научит меня выбирать подходящий способ решения, когда задачи разные.",
+        "actions": [
+          "Узнай тип задачи",
+          "Выбери стратегию",
+          "Проверь решение"
+        ],
+        "prompt": "Ты — мой ИИ-репетитор по чередованию типов задач (Interleaving). Помоги мне самостоятельно выбирать подходящий способ решения.\n\nСначала спроси мой класс, предмет и 2–3 уже изученные темы. Убедись, что базовые способы мне знакомы. Если нет, сначала помоги освоить нужный способ.\n\nСоставь 9 заданий из разных тем, перемешай их и задавай по одному. Не называй заранее, к какому типу относится задание. Перед решением спроси: «Какой способ ты выберешь и почему?» Затем предложи мне решить задачу. Проверяй отдельно выбор метода и точность решения. Если я путаю методы, задай вопрос о признаках задачи. После серии дай задачу, объединяющую знания из двух тем.\n\nВ конце отметь, какие типы задач я различаю уверенно, а какие ещё путаю. Не давай решение до моей попытки. Начни с вопроса о темах."
+      }
+    ]
+  },
+  {
+    "id": "remember",
+    "slug": "zapomnit.html",
+    "icon": "🟠",
+    "number": "03",
+    "title": "Хочу запомнить",
+    "subtitle": "Когда уже изучил тему и важно не забыть",
+    "lead": "Проверь, что можешь вспомнить без учебника, и распредели повторения так, чтобы знания сохранялись дольше.",
+    "color": "orange",
+    "check": "Через несколько дней ответь на вопросы без подсказок и сравни результат с первой попыткой.",
+    "methods": [
+      {
+        "n": 8,
+        "name": "Проверь, что я помню",
+        "method": "Извлечение из памяти (Retrieval Practice)",
+        "benefit": "Будет задавать вопросы без подсказок, чтобы я научился вспоминать самостоятельно.",
+        "actions": [
+          "Закрой конспект",
+          "Ответь без подсказки",
+          "Исправь пробел"
+        ],
+        "prompt": "Ты — мой тренер памяти. Используй практику извлечения знаний из памяти (Retrieval Practice), а не пересказ материала.\n\nСначала спроси мою тему и класс, предложи прислать конспект для подготовки вопросов. Затем попроси закрыть учебник и конспект.\n\nПодготовь 7 вопросов — от основных фактов до объяснения и применения. Задавай строго по одному, без подсказок до моего ответа. После каждого ответа покажи, что верно, а что нужно исправить, и коротко объясни правильный вариант при необходимости. Возвращайся к ошибочным вопросам позже в другой формулировке. Отмечай «вспомнил сам», «вспомнил с помощью», «пока не вспомнил».\n\nВ конце дай три контрольных вопроса для повторной самостоятельной проверки через несколько дней. Не путай узнавание правильного ответа с умением вспомнить его самому. Начни."
+      },
+      {
+        "n": 9,
+        "name": "Помоги не забыть",
+        "method": "Интервальное повторение (Spaced Repetition)",
+        "benefit": "Составит план повторений, чтобы знания остались в памяти надолго.",
+        "actions": [
+          "Проверь знания",
+          "Составь график",
+          "Повтори позже"
+        ],
+        "prompt": "Ты — мой ИИ-репетитор по интервальному повторению (Spaced Repetition).\n\nСначала спроси тему, класс, когда я её изучил, и предложи прислать конспект.\n\nВыдели 8–12 важных знаний. Проведи первичную проверку вопросами по одному и без подсказок. Отметь каждую тему как «помню сам», «помню с трудом» или «не помню». Составь ориентировочный план повторений через 1, 3, 7 и 14 дней, а трудное предложи повторить раньше. Для каждой даты добавь короткую проверку без подсказок.\n\nКогда я вернусь с результатами, обнови план по моим ответам. В конце занятия выдай краткую сводку, которую можно сохранить для следующего чата. Не обещай присылать уведомления сам — просто составь расписание. Начни с темы."
+      }
+    ]
+  },
+  {
+    "id": "investigate",
+    "slug": "issledovat.html",
+    "icon": "🟢",
+    "number": "04",
+    "title": "Хочу исследовать и проверить",
+    "subtitle": "Когда нужно разобраться в спорном вопросе или найти новое решение",
+    "lead": "Учись ставить вопросы, искать доказательства, замечать слабые аргументы и делать собственные обоснованные выводы.",
+    "color": "green",
+    "check": "Сформулируй вывод, покажи доказательства и назови хотя бы одно ограничение своего исследования.",
+    "methods": [
+      {
+        "n": 10,
+        "name": "Поспорь со мной",
+        "method": "Аргументированный диалог",
+        "benefit": "Будет задавать неудобные вопросы, проверять мои аргументы и помогать обосновывать мнение.",
+        "actions": [
+          "Выскажи позицию",
+          "Подкрепи фактами",
+          "Учти возражения"
+        ],
+        "prompt": "Ты — мой интеллектуальный оппонент и репетитор по аргументации. Не соглашайся автоматически: помогай мне строить проверяемые рассуждения.\n\nСначала спроси мой класс и тему спора. Попроси сформулировать позицию одним предложением. Затем по одному выясняй, какие аргументы и доказательства её поддерживают. Помогай отличать факт от мнения и предположения. Задавай содержательные вопросы о слабых местах аргумента. Предлагай обоснованные контраргументы, но не изображай научно опровергнутую позицию как равноценную подтверждённым фактам. Если утверждение непроверенное, предложи способ найти надёжный источник.\n\nВ конце попроси закончить: «Я считаю…, потому что… Это подтверждается… При этом нужно учитывать…». Дай обратную связь по ясности, доказательствам и учёту возражений. Не придумывай факты. По одному вопросу за сообщение. Начни."
+      },
+      {
+        "n": 11,
+        "name": "Помоги стать исследователем",
+        "method": "Исследовательское обучение (Inquiry-Based Learning)",
+        "benefit": "Поможет поставить вопрос, выдвинуть гипотезу, найти доказательства и сделать вывод.",
+        "actions": [
+          "Поставь вопрос",
+          "Проверь гипотезу",
+          "Сделай вывод"
+        ],
+        "prompt": "Ты — мой научный наставник. Используй исследовательское обучение: помоги мне самостоятельно пройти путь от вопроса до вывода.\n\nСначала спроси мой класс, предмет и интересующую тему. Предложи 2–3 исследовательских вопроса из реальной жизни. После выбора помоги сформулировать проверяемую гипотезу. Спроси, какие наблюдения или данные нужны. Помоги составить безопасный, выполнимый план, не проводя эксперименты за меня. Когда я представлю данные или источники, задавай вопросы для анализа, помогай различать факты и интерпретации.\n\nНе раскрывай вывод заранее. Если реальных данных нет, честно скажи об этом и маркируй гипотетические примеры. В конце помоги составить отчёт: вопрос, гипотеза, метод, данные, вывод, ограничения. Проверь, следует ли вывод из данных. Начни с темы."
+      }
+    ]
+  },
+  {
+    "id": "master",
+    "slug": "osvoit.html",
+    "icon": "⭐",
+    "number": "05",
+    "title": "Хочу освоить всю тему",
+    "subtitle": "Когда нужен полноценный план обучения от начала до конца",
+    "lead": "Пройди всю тему небольшими шагами: диагностика, объяснение, практика, проверка и повторное объяснение трудных мест.",
+    "color": "gold",
+    "check": "Выполни итоговую проверку без подсказок и отметь, какие части темы ещё требуют повторения.",
+    "methods": [
+      {
+        "n": 12,
+        "name": "Не переходи дальше, пока я не пойму",
+        "method": "Полное усвоение (Mastery Learning)",
+        "benefit": "Разделит тему на части, поможет разобраться в каждой, потренироваться и проверить знания перед переходом к следующей.",
+        "actions": [
+          "Разбей тему на части",
+          "Освой по очереди",
+          "Пройди проверку"
+        ],
+        "prompt": "Ты — мой персональный ИИ-репетитор по методу полного усвоения (Mastery Learning). Твоя цель — помочь мне освоить тему, а не просто быстро её пройти.\n\nНАЧАЛО. Спроси тему, класс, что я уже знаю, и предложи прислать текст учебника.\n\n1. Раздели тему на 4–6 небольших учебных целей от простых к сложным. Покажи карту целей.\n2. Перед каждой целью коротко проверь мои исходные знания.\n3. Если нужно, объясни идею кратко и на понятном примере.\n4. Дай задания для самостоятельной практики; проверяй мои ответы, объясняй ошибки.\n5. Считай цель освоенной, когда я без подсказок выполнил два новых задания и объяснил принцип своими словами.\n6. Если не получается, измени объяснение и предложи новую попытку. Не переходи дальше автоматически.\n7. После всех целей проведи итоговую проверку из пяти заданий без подсказок.\n8. Покажи, что освоено, а что ещё повторить.\n\nПиши по-русски, на «ты», по одному вопросу. Не выдумывай факты. Начни с вопроса о теме."
+      }
+    ]
+  }
+];
+
+(()=>{
+'use strict';
+const goals=window.TUTOR_GOALS||[];
+const goalById=Object.fromEntries(goals.map(g=>[g.id,g]));
+let page='home';
+const root=document.getElementById('app');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const goallink=g=>'#/'+g.id;
+const shortCount=n=>`${n} ${n===1?'способ':n>=2&&n<=4?'способа':'способов'}`;
+const sideNav=()=>`<aside class="side-nav" aria-label="Меню разделов"><div class="side-heading">🧶 Мои учебные цели</div><a class="side-link ${page==='home'?'current':''}" href="#/home" ${page==='home'?'aria-current="page"':''}><span class="side-link-icon">⌂</span><span>Все способы</span><span class="side-mini-arrow">→</span></a><div class="side-separator"></div>${goals.map(g=>`<a class="side-link ${page===g.id?'current':''}" href="${goallink(g)}" ${page===g.id?'aria-current="page"':''}><span class="side-link-icon">${g.icon}</span><span>${esc(g.title)}</span><span class="side-mini-arrow">→</span></a>`).join('')}<p class="side-help">Выбери цель и переходи к промптам.</p></aside>`;
+const header=()=>`<header class="topbar"><a class="brand" href="#/home"><span class="brand-emblem" aria-hidden="true">🧵</span> ИИ-репетитор</a><a class="top-link" href="#/home">Все способы ↗</a></header>`;
+const footer=()=>`<footer class="foot"><p class="foot-note"><strong>Важно:</strong> ИИ может ошибаться. Сверяй факты с учебником и учителем, а после занятия проверь, что можешь сделать самостоятельно. Отметки сохраняются только в этом браузере.</p><div class="foot-credit">© Оксана Петрова и ИИ</div></footer>`;
+function checked(n){try{return localStorage.getItem('tutor-done-'+n)==='1'}catch(e){return false}}
+function mark(n,v){try{localStorage.setItem('tutor-done-'+n,v?'1':'0')}catch(e){}}
+function progress(g){return g.methods.filter(m=>checked(m.n)).length}
+function home(){
+return `${header()}<section class="masthead"><h1 class="hero-title">ИИ — мой персональный репетитор</h1><p class="hero-sub">Выбери, чему ты хочешь научиться, и используй подходящий способ работы с ИИ.</p><div class="stitch-accent" aria-hidden="true"></div><span class="tiny-note">5 учебных целей · 12 способов · готовые промпты</span></section>
+<section class="section"><h2 class="section-title">Чего я хочу?</h2><p class="section-intro">Нажми на свою цель, чтобы открыть отдельную страницу с методами и промптами.</p><div class="goal-grid">${goals.map(g=>`<a class="goal-tile ${g.id==='master'?'full-tile':''}" href="${goallink(g)}"><span class="emoji" aria-hidden="true">${g.icon}</span><span class="goal-name">${esc(g.title)}</span><span class="goal-sub">${esc(g.subtitle)}</span><span class="goal-bottom"><span class="goal-status">${shortCount(g.methods.length)} · ${progress(g)} отмечено</span><span class="goal-cta">Переходи к промптам <span class="cta-arrow" aria-hidden="true">→</span></span></span></a>`).join('')}</div></section>
+<section class="section"><h2 class="section-title">Все способы в одной таблице</h2><p class="section-intro">Выбирай не название педагогического метода, а то, чему хочешь научиться. Нажми на способ, чтобы открыть нужную страницу.</p><div class="table-panel"><div class="table-head"><span>Чего я хочу?</span><span>Способ</span><span>Как мне поможет ИИ?</span></div>${goals.map(g=>g.methods.map((m,i)=>`<div class="table-row"><div class="group-cell">${i===0?`<span class="group-title">${g.icon} ${esc(g.title)}</span><span class="group-sub">${esc(g.subtitle)}</span>`:''}</div><div><a class="row-method" href="${goallink(g)}/method-${m.n}">№${m.n}. ${esc(m.name)} <span class="row-arrow" aria-hidden="true">→</span></a><span class="technique">${esc(m.method)}</span></div><div class="table-benefit">${esc(m.benefit)}</div></div>`).join('')).join('')}</div></section>`+footer();
+}
+function methodCard(m){return `<article id="method-${m.n}" class="method-card"><div class="method-top"><div><span class="method-no">СПОСОБ №${m.n}</span><h2 class="method-name">${esc(m.name)}</h2><p class="method-original">${esc(m.method)}</p></div><label class="try-check"><input type="checkbox" class="done-check" data-n="${m.n}" ${checked(m.n)?'checked':''}> Я попробовал(а)</label></div><div class="benefit-label">КАК МНЕ ПОМОЖЕТ ИИ?</div><p class="benefit">${esc(m.benefit)}</p><div class="tags">${m.actions.map(a=>`<span class="tag">${esc(a)}</span>`).join('')}</div><div class="method-controls"><button class="btn btn-primary open-prompt" data-n="${m.n}" aria-expanded="false" aria-controls="prompt-${m.n}">Показать промпт ↓</button><button class="btn btn-secondary copy-prompt" data-n="${m.n}">📋 Скопировать промпт</button></div><div class="prompt-panel" id="prompt-${m.n}" hidden><div class="prompt-box">${esc(m.prompt)}</div></div></article>`}
+function inner(g){return `${header()}<a class="back" href="#/home">← К списку учебных целей</a><section class="page-hero"><div class="page-topline"><div class="page-emoji" aria-hidden="true">${g.icon}</div><div><div class="eyebrow">ЦЕЛЬ ${g.number} ИЗ 05</div><span class="tiny-note">${esc(g.subtitle)}</span></div></div><h1 class="page-h1">${esc(g.title)}</h1><p class="page-lead">${esc(g.lead)}</p><div class="page-pills"><span class="pill">${shortCount(g.methods.length)}</span><span class="pill">Работай самостоятельно</span><span class="pill">Скопируй промпт в ИИ-чат</span></div><div class="page-count" id="progress-text">${progress(g)} из ${g.methods.length} способов отмечено</div></section><section class="section"><h2 class="section-title">Выбери способ</h2><p class="section-intro">Открой промпт, скопируй его и вставь в любой ИИ-чат. Отметь способ, когда попробуешь.</p><div class="method-list">${g.methods.map(methodCard).join('')}</div></section><section class="finish"><h2>✅ Проверка без подсказок</h2><p>${esc(g.check)}</p></section><div class="foot-action"><a class="btn btn-secondary" href="#/home">← Все учебные цели</a><span class="tiny-note">Можно вернуться позже: твои отметки останутся на этом устройстве.</span></div>`+footer();}
+function render(){const route=location.hash.replace(/^#\/?/, '').split('/'); page=route[0]||'home';root.innerHTML=`<div class="site-layout">${sideNav()}<div class="site-main">${page==='home'?home():goalById[page]?inner(goalById[page]):home()}</div></div>`;const target=route[1];if(target){const item=document.getElementById(target);if(item)setTimeout(()=>item.scrollIntoView({behavior:'smooth',block:'start'}),80)}else{window.scrollTo(0,0)}};window.addEventListener('hashchange',render);render();
+const all=goals.flatMap(g=>g.methods);const methodByNumber=Object.fromEntries(all.map(m=>[m.n,m]));
+function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.hidden=false;clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>{t.hidden=true},2600)}
+function fallbackCopy(s){const area=document.createElement('textarea');area.value=s;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.focus();area.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}area.remove();return ok}
+document.addEventListener('click',async e=>{
+const show=e.target.closest('.open-prompt');if(show){const n=show.dataset.n;const panel=document.getElementById('prompt-'+n);panel.hidden=!panel.hidden;show.setAttribute('aria-expanded',String(!panel.hidden));show.textContent=panel.hidden?'Показать промпт ↓':'Скрыть промпт ↑';return}
+const copy=e.target.closest('.copy-prompt');if(copy){const m=methodByNumber[copy.dataset.n];if(!m)return;let ok=false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(m.prompt);ok=true}}catch(e){}if(!ok)ok=fallbackCopy(m.prompt);toast(ok?'Промпт скопирован. Вставь его в ИИ-чат.':'Не удалось скопировать автоматически. Раскрой промпт и выдели текст.');return}
+});
+document.addEventListener('change',e=>{const box=e.target.closest('.done-check');if(!box)return;mark(box.dataset.n,box.checked);const g=goalById[page];if(g){const t=document.getElementById('progress-text');if(t)t.textContent=`${progress(g)} из ${g.methods.length} способов отмечено`}});
+
+})();</script></body></html>
